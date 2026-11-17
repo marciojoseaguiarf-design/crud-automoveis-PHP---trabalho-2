@@ -1,0 +1,99 @@
+/*
+Curso: Engenharia de Software
+Disciplina: Linguagem e Tecnicas de Programacao
+Professor: Flores
+Turma: ESOFT-2
+Componentes:
+          260081732 - Alan Cristian dos Santos Costa
+          260071312 - Gabriel Felipe Albano Grendel
+          260140792 - Gustavo Ramos Marcondes
+          260052892 - Marcio Jose Aguiar Filho
+          260103602 - Victor Asaf Antunes dos Santos
+Data: 03 de Novembro de 2026
+Descritivo: Estilos visuais compartilhados pelas páginas do sistema CRUD.
+*/
+/* Aplica fonte, fundo, cor e remove a margem padrão do documento. */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte geral da página. */
+    background: #f3f3f3; /* Define o fundo cinza claro. */
+    color: #222; /* Define a cor geral do texto. */
+    margin: 0; /* Remove a margem padrão do navegador. */
+}
+
+/* Define a aparência do cabeçalho principal. */
+header {
+    background: #2878b5; /* Colore o cabeçalho de azul. */
+    color: white; /* Deixa o texto do cabeçalho branco. */
+    padding: 18px calc((100% - 900px)/2); /* Centraliza o conteúdo com espaçamento lateral. */
+}
+
+/* Separa o título do menu de navegação. */
+header h1 { margin: 0 0 12px; }
+
+/* Define a cor e o espaço dos links do menu. */
+nav a {
+    color: white; /* Deixa os links brancos. */
+    margin-right: 18px; /* Separa os links uns dos outros. */
+}
+
+/* Formata a área central do conteúdo. */
+main {
+    max-width: 900px; /* Limita a largura do conteúdo. */
+    margin: 24px auto; /* Centraliza o conteúdo e cria espaço vertical. */
+    background: white; /* Coloca fundo branco na área principal. */
+    padding: 24px; /* Cria espaço interno. */
+    border: 1px solid #ccc; /* Desenha uma borda cinza fina. */
+    border-radius: 5px; /* Arredonda os cantos da área. */
+}
+
+/* Centraliza o rodapé e define a cor do texto. */
+footer { text-align: center; color: #666; padding: 18px; }
+
+/* Aplica o mesmo formato aos botões e links com classe botao. */
+.botao, button {
+    display: inline-block; /* Permite definir tamanho e espaçamento. */
+    background: #2878b5; /* Define o fundo azul. */
+    color: white; /* Define o texto branco. */
+    padding: 9px 13px; /* Cria espaço dentro do botão. */
+    border: 0; /* Remove a borda padrão. */
+    border-radius: 4px; /* Arredonda os cantos. */
+    text-decoration: none; /* Remove o sublinhado dos links. */
+    cursor: pointer; /* Mostra o cursor de clique. */
+    margin: 5px 0 15px; /* Define o espaço ao redor do botão. */
+}
+
+/* Faz as tabelas ocuparem toda a largura e junta as bordas. */
+table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+
+/* Alinha o texto da tabela e desenha bordas nas células. */
+th, td { text-align: left; border: 1px solid #ccc; padding: 9px; }
+
+/* Destaca os títulos da tabela com fundo cinza claro. */
+th { background: #eee; }
+
+/* Organiza os rótulos dos campos dos formulários. */
+label { display: block; margin: 14px 0; }
+
+/* Formata campos de texto, seleções e áreas de texto. */
+input, textarea, select {
+    display: block; /* Coloca cada campo em sua própria linha. */
+    box-sizing: border-box; /* Inclui bordas e espaçamento no tamanho total. */
+    width: 100%; /* Faz o campo ocupar a largura disponível. */
+    max-width: 500px; /* Limita a largura máxima do campo. */
+    padding: 9px; /* Cria espaço interno para digitação. */
+    margin-top: 5px; /* Separa o campo do rótulo. */
+    border: 1px solid #aaa; /* Desenha uma borda cinza. */
+    border-radius: 3px; /* Arredonda os cantos do campo. */
+}
+
+/* Define a altura mínima da caixa de descrição. */
+textarea { min-height: 75px; }
+
+/* Destaca mensagens de sucesso ou de resultado da operação. */
+.mensagem { padding: 10px; background: #e8f5e9; border: 1px solid #8bc48f; }
+
+/* Ajusta o layout para telas estreitas, como celulares. */
+@media (max-width: 600px) {
+    header { padding: 18px; } /* Reduz o espaço lateral do cabeçalho. */
+    main { margin: 12px; padding: 14px; overflow-x: auto; } /* Ajusta margens e permite rolar tabelas largas. */
+}
